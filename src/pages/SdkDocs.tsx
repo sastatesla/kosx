@@ -125,7 +125,7 @@ const SDKDocs = () => {
 
           <div className="flex-1 lg:ml-80 mt-8">
             <div className="sticky top-0 z-40 bg-gray-900/95 backdrop-blur-sm border-b border-gray-700">
-              <div className="px-6 py-4">
+              <div className="px-6 py-4 flex flex-col columns-2">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -133,7 +133,7 @@ const SDKDocs = () => {
                     </h1>
                     <p className="text-gray-400 mt-1">Comprehensive guide to our developer tools</p>
                   </div>
-                  <div className="relative w-3/5">
+                  <div className="relative w-3/5 lg:visible hidden">
                     <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
                     <Input
                       placeholder="Search documentation..."

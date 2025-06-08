@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import Logo from '/assets/KoshX.jpg'; // Adjust the path as necessary
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg">
-              <img src="/assets/KoshX.jpg" alt="KOSX Logo" className="h-10 w-10 rounded-lg" />
+              <img src={Logo} alt="KOSX Logo" className="h-10 w-10 rounded-lg" />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r text-white">
               KOSX
@@ -53,11 +54,13 @@ const Header = () => {
               <a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a>
               <a href="#integrations" className="text-gray-300 hover:text-white transition-colors">Integrations</a>
               <Link to="/pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</Link>
-              <a href="#docs" className="text-gray-300 hover:text-white transition-colors">Docs</a>
+              <Link to="/docs" className="text-gray-300 hover:text-white transition-colors">Docs</Link>
+              <Link to={'/docs'}>
               <div className="flex flex-col space-y-2 pt-4">
                 {/* <Button variant="ghost" className="text-gray-300 hover:text-white hover:bg-gray-800">Sign In</Button> */}
                 <Button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">Get Started</Button>
               </div>
+              </Link>
             </nav>
           </div>
         )}

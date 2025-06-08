@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-950 text-white border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex justify-between gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <Link to="/" className="flex items-center space-x-2">
@@ -17,7 +17,7 @@ const Footer = () => {
                           KOSX
                         </span>
                       </Link>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <p className="text-gray-400 mb-6 leading-relaxed w-96">
               The ultimate plug-and-play SDK platform for developers. 
               Built in India, for the world.
             </p>
@@ -37,8 +37,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Product */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Product</h3>
             <ul className="space-y-3 text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
@@ -49,7 +48,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Developers */}
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Developers</h3>
             <ul className="space-y-3 text-gray-400">
@@ -60,18 +58,14 @@ const Footer = () => {
               <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
             </ul>
           </div>
-
-          {/* Company */}
+            */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Company</h3>
-            <ul className="space-y-3 text-gray-400">
-              <li><a href="#" className="hover:text-white transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Support</a></li>
-            </ul>
-          </div>
+            <h3 className="text-lg font-semibold mb-4 text-white"> Request Support</h3>
+            <a href='emailto'>
+           <p>support@rowx.in</p>
+
+            </a>
+          </div> 
         </div>
 
         {/* Bottom Section */}
