@@ -9,3 +9,4 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
+Check the demo here: https://kosx-sdk.web.app/
